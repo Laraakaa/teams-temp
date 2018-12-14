@@ -1,0 +1,14 @@
+{
+  "name": "teams-temp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LarsBaertschi/teams-temp.git",
+  "author": "Lars Bärtschi <lars.baertschi@bluewin.ch>",
+  "license": "MIT",
+  "bin": {
+    "teamstemp": "index.js"
+  },
+  "dependencies": {
+    "ajv": "^6.6.1"
+  }
+}

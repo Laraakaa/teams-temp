@@ -1,0 +1,9 @@
+{
+  "mappings": [
+    {
+      "name": "simpleTest",
+      "entry": "simpleTest/index.js",
+      "hooks": ["my-cool-channel"]
+    }
+  ]
+}

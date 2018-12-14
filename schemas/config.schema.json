@@ -1,0 +1,38 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "mappings"
+  ],
+  "properties": {
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "entry",
+          "hooks"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "The name of the template"
+          },
+          "entry": {
+            "type": "string",
+            "title": "The path to the entry file"
+          },
+          "hooks": {
+            "type": "array",
+            "title": "The names of the hooks this template is sent to",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
