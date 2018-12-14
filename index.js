@@ -15,10 +15,9 @@ if (process.argv.length !== 3) {
   process.exit(1);
 }
 
-const configFile = process.argv[2] + "/config.json";
-const configContents = fs.readFileSync(configFile);
-const config = JSON.parse(configContents);
-console.log("Using config file: " + configFile);
+module.paths.push(process.cwd());
+
+const config = require('config.json');
 
 if (!ajv.validate(configSchema, config)) {
   console.log("Error while parsing config.json:")
@@ -28,4 +27,7 @@ if (!ajv.validate(configSchema, config)) {
 
 const mappings = config["mappings"];
 
-console.log(mappings)
+mappings.forEach(mapping => {
+  const template = require(mapping.entry);
+  console.log(template);
+});
