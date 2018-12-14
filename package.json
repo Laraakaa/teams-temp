@@ -9,6 +9,9 @@
     "teamstemp": "index.js"
   },
   "dependencies": {
-    "ajv": "^6.6.1"
+    "ajv": "^6.6.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
   }
 }
