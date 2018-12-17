@@ -1,7 +1,7 @@
 let request = require('request');
 
 if (config.proxy && config.proxy.length !== 0) {
-  request = requestDefault.defaults({
+  request = request.defaults({
     proxy: config.proxy
   });
 }
