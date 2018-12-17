@@ -12,11 +12,6 @@ const ajv = new Ajv();
 
 console.log("TeamsTemp " + info.version);
 
-if (process.argv.length !== 3) {
-  console.log("Please specify a path. To use pwd, use (dot): 'teamstemp .'");
-  process.exit(1);
-}
-
 module.paths.push(process.cwd());
 
 const config = require('config.json');
