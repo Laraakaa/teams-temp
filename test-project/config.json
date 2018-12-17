@@ -4,6 +4,12 @@
       "name": "simpleTest",
       "entry": "simpleTest/index.js",
       "hooks": ["my-cool-channel"]
+    },
+    {
+      "name": "message",
+      "entry": "message/index.js",
+      "hooks": ["my-cool-channel"]
     }
-  ]
+  ],
+  "proxy": "http://localhost:5050"
 }

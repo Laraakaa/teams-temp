@@ -1,7 +1,7 @@
-module.exports = {
+module.exports = params => ({
   "@context": "https://schema.org/extensions",
   "@type": "MessageCard",
-  "themeColor": "0072C6",
+  "themeColor": "11aaff",
   "title": "Visit the Outlook Dev Portal",
   "text": "Click **Learn More** to learn more about Actionable Messages!",
   "potentialAction": [
@@ -33,4 +33,4 @@ module.exports = {
       ]
     }
   ]
-}
+});
