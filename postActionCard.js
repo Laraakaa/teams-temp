@@ -1,8 +1,10 @@
-const requestDefault = require('request');
+let request = require('request');
 
-const request = requestDefault.defaults({
-  proxy: config.proxy
-});
+if (config.proxy && config.proxy.length !== 0) {
+  request = requestDefault.defaults({
+    proxy: config.proxy
+  });
+}
 
 const postActionCard = (actionCard) => {
   return new Promise((resolve, reject) => {
